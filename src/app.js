@@ -62,7 +62,7 @@ app.get('/weather/submit', (req, res) => {
         if (error) {
             return res.send({ error });
         } else {
-            forecast(Lat, Long, (error, { description, temperature, feelslike }) => {
+            forecast(Lat, Long, (error, { description, temperature, feelslike, humidity }) => {
                 if (error) {
                     return res.send({ error });
                 } else {
@@ -70,7 +70,8 @@ app.get('/weather/submit', (req, res) => {
                         place: Place,
                         description,
                         temperature,
-                        feelslike
+                        feelslike, 
+                        humidity
                     });
                 }
             });

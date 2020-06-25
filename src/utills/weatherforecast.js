@@ -23,7 +23,8 @@ const  forecast = (lat, long, callback) => {
                 callback(undefined, {
                     description: cur.weather_descriptions[0],
                     temperature: cur.temperature,
-                    feelslike: cur.feelslike
+                    feelslike: cur.feelslike,
+                    humidity: cur.humidity
                 })
             }
         });
