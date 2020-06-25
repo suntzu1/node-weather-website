@@ -30,7 +30,7 @@ function weatherForecast(address) {
                     msg = data.error;
                 } else {
                     pr.parentElement.setAttribute('class', 'good report');
-                    msg = `This is the weather summary for: ${data.place}.<br>It is currently "${data.description}" and ${data.temperature} degrees F outside, but feels like ${data.feelslike} degrees F.
+                    msg = `<b>${data.place}.</b><hr/>It is currently "${data.description}" and ${data.temperature} degrees F outside, but feels like ${data.feelslike} degrees F.
                     <br>The humidity is ${data.humidity}%.`;
                 }
                 pr.innerHTML = msg;
