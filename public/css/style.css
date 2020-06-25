@@ -1,0 +1,88 @@
+body {
+    color: #333333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.applogotitle {
+    width: 100%;
+    justify-content: flex-start;
+}
+.applogotitle h1{
+    display: inline-block;
+}
+h1 {
+    color: maroon;
+}
+h2 {
+    color: firebrick;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color: #4CAF50;
+  }
+
+header {
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+footer {
+    color: #888888;
+    font-style: italic;
+    font-weight: bold;
+    font-size: smaller;
+    padding: 20px 0;
+    margin-top: 15px;
+    border-top: 1px solid #dddddd;
+}
+.logo {
+    height: 80px;
+    display: inline-block;
+}
+.main-content {
+    flex-grow: 1;
+}
+.report {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  color: #2b6ee9;
+}
+.good {
+  border: solid 1px #4CAF50;
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+.bad {
+  border: solid 1px #d42d2d;
+  background-color: #ca0b0b;
+  color: #ffffff;
+}

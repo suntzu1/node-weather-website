@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Enter your address in the text box below and press submit</p>
+        <input type="text" name="txtAddress" id="txtAddress" value="">
+        <input type="button" value="SUBMIT" onclick="submitRequest()">
+        <div><label id="pResponse"></label></div>        
+    </div>
+    {{>footer}}
+</body>
+
+</html>

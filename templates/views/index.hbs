@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this page to get your local weather</p>
+        <form action="">
+            <input id="txt-address" type="text">
+            <button type="submit">Search</button>
+        </form>
+        <div class="report"><label id="loading"></label></div>
+        <div><label id="pResponse"></label></div>
+    </div>
+    {{>footer}}
+    <script src="./js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
